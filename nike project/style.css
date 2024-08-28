@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo img{
+    color: #fff;
+    width: 100px; 
+    height: auto;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+ 
+  }
+nav ul li{
+   margin: 0 5px;
+    cursor: pointer;
+}
+ul li a{
+    color: rgb(26, 26, 26);
+    font-size: 26px;
+    font-weight: 510;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 7px 15px;
+    transition: all 0.5s ease;
+    letter-spacing: 1px;
+}
+nav ul li a.active,
+  nav ul li a:hover{
+    background: rgb(37, 36, 36);
+    color: rgb(228, 235, 237);
+  }
+  nav.btn1{
+    width: 25rem;
+    height: 7rem;
+    position: absolute;
+    right: 8.5rem;
+    
+  
+  }
+  .btn1 button{
+   padding: .6rem 1.5rem;
+   cursor: pointer;
+   border: none;
+   color: #fff;
+   background-color: #d01c28;
+   font-size: 1.5rem;
+
+  }
+  .icons {
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  section {
+    padding: 10.2rem 0rem 0 12rem;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .content{
+    width: 58rem;
+  }
+  .content h1{
+   /*text-align: center;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 805;
+    line-height: 10rem;
+    font-size: 10rem;
+    width: 100%;
+  }
+  .content p{
+    font-size: 1.7rem;
+    font-weight: 620;
+    padding: 2.5rem 0;
+    line-height: 2.3;
+    color:#5a5959;
+    font-family: sans-serif;
+    margin: auto;
+    
+  }
+  .btn {
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /*justify-content: center;*/
+  }
+  
+  .btn .shop{
+    width: 15rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background-color:#d01c28;
+    border: 1px #d01c28;
+    height: 4rem;
+    cursor: pointer;
+  }
+  .btn .categories{
+    width: 15rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    height: 4rem;
+    background: transparent;
+    cursor: pointer;
+  }
+  .para{
+    color: #5a5959;
+    font-weight: 200;
+    padding: 3rem 0 0;
+    font-size: 10rem;
+    font-family: "Inter", sans-serif;
+    
+
+  }
+  .icon{
+    gap: 2.5rem;
+    padding: 2rem 0 5rem;
+    display: flex;
+    position: relative;
+    bottom: 25px;
+    left: 1rem;
+    cursor: pointer;
+  }
+  .shoes{
+    height: 100%;
+    padding: 5rem 0;
+  }
+  .shoes img{
+    width: 80rem;
+    position: absolute;
+    top: 23rem;
+    right: 3rem;
+    filter: drop-shadow(13px 25px 10px rgba(0, 0, 0, 0.5))
+  }
+  /*responsive*/
+ 
+  @media only screen and (max-width: 1050px) {
+    html {
+      font-size: 70%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    html {
+      font-size: 50%;
+    }
+  }
+ 
+@media only screen and (max-width: 740px) {
+  .logo {
+    padding: 1.5rem 0 0 2.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    transition: .3s ease;
+    background-color: #fff;
+    padding-top: 6rem;
+    overflow: hidden;
+    position: fixed;
+  }
+
+  nav ul li a {
+    padding: 1.1rem;
+    font-size: 2.1rem;
+    transform: translateY(-50px);
+  }
+
+  nav .logo {
+    display: block;
+  }
+  nav .logo img {
+   margin: auto;
+    position: absolute;
+    top: 2.6rem;
+    left: 2rem;
+    width: 7.6rem;
+    height: 4.2rem;
+  }
+  
+  .icons{
+    display: block;
+  }
+  #check:checked ~nav{
+    height: 17.7rem;
+    
+  }
+  .btn1 {
+    display: none;
+  }
+  nav .btn1 {
+    display: block;
+  }
+  .nav .btn button {
+    padding: 0.8rem 3.6rem;
+    cursor: pointer;
+    background-color: #d01c28;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  section {
+    padding: 4.2rem 0rem;
+  }
+  .container {
+    width: 100%;
+    display: block;
+  }
+  .content{
+    width: 100%;
+  }
+  .content h1 {
+    font-size: 5.5rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+  .content p {
+    width: 75%;
+    font-size: 1.1rem;
+    padding: 2rem 0;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: auto;
+  }
+  .btn {
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+    top: 42rem;
+  }
+  .shop {
+    width: 20rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .categories {
+    width: 20rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .para {
+    padding: 2.2rem 0 0;
+    font-size:2.3rem;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 41rem;
+  }
+  .icon {
+    gap: 2.4rem;
+    padding: 2rem 0 5rem;
+    justify-content: center;
+    position: relative;
+    top: 40rem;
+  }
+  .shoes {
+    width: 1rem;
+    position: absolute;
+    top: 12rem;
+    right: 3.5rem;}}
+
+    
